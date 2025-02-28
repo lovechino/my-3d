@@ -1,24 +1,29 @@
+import { About } from './Components/About';
+import { Contact } from './Components/Contact';
+import { Experience } from './Components/Experience';
+import { Home } from './Components/Home';
+
+import { NavBar } from './Components/Navbar';
+import { Product } from './Components/Product';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className=" overflow-x-hidden text-black-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+      <div className="fixed top-0 -z-10 h-full w-full">
+      <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+      </div>
+      <div className='container mx-auto px-8'>
+        <NavBar/>
+        <Home />
+        <About />
+        <Product />
+        <Experience />
+        <Contact />
+      </div>
+      
+     </div>
   );
 }
 
