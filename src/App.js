@@ -5,9 +5,6 @@ import { Home } from './Components/Home';
 
 import { NavBar } from './Components/Navbar';
 import { Product } from './Components/Product';
-import logo from './logo.svg';
-// import './App.css';
-
 function App() {
   return (
      <div className=" overflow-x-hidden text-black-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">

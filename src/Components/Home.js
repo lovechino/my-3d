@@ -1,5 +1,5 @@
 import faker from "../Images/licensed-image.jpg"
-import {delay, motion} from "framer-motion"
+import {motion} from "framer-motion"
 export const Home = () =>{
   const container = (delay)=>({
     hidden :{x :-100,opacity :0},

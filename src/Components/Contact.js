@@ -1,4 +1,4 @@
-import { FacebookFilled, InstagramFilled, TikTokFilled, YoutubeFilled } from "@ant-design/icons"
+import { FacebookFilled, InstagramFilled,  YoutubeFilled } from "@ant-design/icons"
 import { Typography } from "antd"
 import { motion } from "framer-motion"
 export  const Contact = ()=>{

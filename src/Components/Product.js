@@ -1,10 +1,9 @@
 import { ImageCard } from "./ImageCard"
-import faker from  "../Images/licensed-image.jpg"
 import doran from "../Images/7dd8d762026b7a0f062c9bfee35fc2d1.jpg"
 import oner from "../Images/7e637dc9d92f82e52ccea582b91dda53.jpg"
 import gumayusi from "../Images/fedb5204a40b9a612be4619e9ebdf098.jpg"
 import keria from "../Images/b0cf78e4708d458a05c5fb04d104c555.jpg"
-import { Backdrop, TestDrop } from "./BackDrop"
+import { Backdrop } from "./BackDrop"
 import { useState } from "react"
 import { Typography } from "antd"
 import { InstagramFilled } from "@ant-design/icons"
@@ -65,7 +64,7 @@ export const Product = ()=>{
             
             <Backdrop open={open} setClose={()=>setOpen(false)} key={item.id}>
                 <div className=" flex max-w-5xl">
-                    <img className=" max-w-xs" src= {getTeam?.img}/>
+                   <img className=" max-w-xs" src= {getTeam?.img}/>
                    <div className=" max-w-xl ml-10">
                        <p>{getTeam?.name}</p>
                        <p>{getTeam?.text}</p>
