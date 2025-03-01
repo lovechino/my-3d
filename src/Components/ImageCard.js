@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { motion } from "framer-motion"
 export const ImageCard = ({children,imgSrc})=>{
     return(
@@ -13,6 +14,7 @@ export const ImageCard = ({children,imgSrc})=>{
             }
         }} 
          className=" relative max-w-xs overflow-hidden rounded-2xl shadow-lg group">
+            
             <img className=" transition-transform group-hover:scale-110 duration-200" src={imgSrc} alt="image"/>
             <div className=" absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent ">
                 <div className="p4 text-white">{children}</div>
