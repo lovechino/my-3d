@@ -80,7 +80,7 @@ export const Experience = ()=>{
             <h1 className="my-20 text-center text-4xl ">Experience</h1>
             <div>
                 {data.map((item)=>(
-                    <div className="mb-8 flex flex-wrap lg:justify-center">
+                    <div className="mb-8 flex flex-wrap lg:justify-center" key={item}>
                         <motion.div 
                         whileInView={{opacity :1,x:0}}
                         initial ={{opacity :0 ,x:-100}}

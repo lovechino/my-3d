@@ -49,7 +49,7 @@ export const Product = ()=>{
            {
             data.map((item)=>(
                 <div key={item.id}>
-             <ImageCard imgSrc={item.img} key={item.id}>
+             <ImageCard imgSrc={item.img} >
                 <h3 className="text-xl font-bold mb-2 ml-2">{item.name}</h3>
                 <p className="ml-2">{item.text}</p>
                 <div className=" space-x-4 mt-4 text-center p-5 hover:text-red-700">
@@ -62,7 +62,7 @@ export const Product = ()=>{
                 </div>
             </ImageCard>
             
-            <Backdrop open={open} setClose={()=>setOpen(false)} key={item.id}>
+            <Backdrop open={open} setClose={()=>setOpen(false)}>
                 <div className=" flex max-w-5xl">
                    <img className=" max-w-xs" src= {getTeam?.img} alt= {getTeam?.name}/>
                    <div className=" max-w-xl ml-10">
