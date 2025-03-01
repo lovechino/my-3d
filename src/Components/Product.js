@@ -64,7 +64,7 @@ export const Product = ()=>{
             
             <Backdrop open={open} setClose={()=>setOpen(false)} key={item.id}>
                 <div className=" flex max-w-5xl">
-                   <img className=" max-w-xs" src= {getTeam?.img}/>
+                   <img className=" max-w-xs" src= {getTeam?.img} alt= {getTeam?.name}/>
                    <div className=" max-w-xl ml-10">
                        <p>{getTeam?.name}</p>
                        <p>{getTeam?.text}</p>
